@@ -1,74 +1,176 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Maze : Maze Game utnuk memnuhi tugas Besar Pemrograman Visual" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Maze</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/TrismanHady/maze">View on GitHub</a>
-
-          <h1 id="project_title">Maze</h1>
-          <h2 id="project_tagline">Maze Game utnuk memnuhi tugas Besar Pemrograman Visual</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/TrismanHady/maze/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/TrismanHady/maze/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Maze maintained by <a href="https://github.com/TrismanHady">TrismanHady</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Maze Game</title>
+	<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
+	<meta name="author" content="www.zerotheme.com">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 962,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+    
+</head>
+<body>
+<!--------------Header--------------->
+<header> 
+	<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li></li>
+		</ul>
+	</nav>
+</header>
 
-  </body>
-</html>
+<div class="social">
+		<div class="shareicons">
+			<ul>
+				<li><a href="https://facebook.com/trisman.hady"></a><img src="images/Active-Facebook-icon.png" title="Facebook"/></li>
+				<li></li>
+				<li><img src="images/Active-Google-plus-icon.png" title="Google+"/></li>
+				<li><img src="images/Active-Twitter-icon.png" title="Twitter"/></li>
+			</ul>
+  </div>
+		
+		<div id="search">
+			<div class="button-search"></div>
+			<input type="text" value="Search..." onFocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onBlur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+		</div>
+
+</div>
+
+<!--------------Slideshow--------------->
+
+<section class="featured">
+	<div class="rslides_container">
+		<ul class="rslides" id="slider">
+			<li><img src="images/slide1.jpg"/></li>
+			<li><img src="images/slide2.jpg"/></li>
+			<li><img src="images/slide3.jpg"/></li>
+		</ul>
+	</div>
+</section>
+			
+<!--------------Content--------------->
+<section id="content">
+	<div class="zerogrid block">		
+		<div class="row block01">
+			<div class="col04">
+				<section>
+					<div class="heading">
+						<img src="images/laptop.png"/>
+						<h2>About Maze </h2>
+					</div>
+					<div class="content">
+						<p>Game  maze adalah game yang akan kami buat pada tugas akhir pemrograman visual kali  ini. Game maze merupakan sebuah game yang memiliki konsep labirin. </p>
+						<p class="more"><a class="button" href="maze.html">Read more</a></p>
+				  </div>
+				</section>
+			</div>
+			<div class="col04">
+				<section>
+					<div class="heading">
+						<img src="images/chart.png"/>
+						<h2>How to Play </h2>
+					</div>
+					<div class="content">
+						<p>Menjelaskan bagaimana cara bermain Maze Game. </p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p class="more"><a class="button" href="how.html">Read more</a></p>
+					</div>
+				</section>
+			</div>
+			<div class="col04">
+				<section>
+					<div class="heading">
+						<img src="images/history.png"/>
+						<h2>Gallery</h2>
+					</div>
+					<div class="content">
+						<p>Berisi foto gallery Maze Game.</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp; </p>
+						<p class="more"><a class="button" href="gallery.html">Read more</a></p>
+					</div>
+				</section>
+			</div>
+			<div class="col04">
+				<section>
+					<div class="heading">
+						<img src="images/web.png"/>
+						<h2>The Developer </h2>
+					</div>
+					<div class="content">
+						<p>Mahasiswa S1 PTI 2011 FT UM. </p>
+						<p>Ika Rizki Choirunnisaa (110533406975) <br>
+						  Maghfiroh Binti S. (110533430535)   Mira Ayu    (110533430511) <br>
+						  Novi Trisman Hadi (110533430563)</p>
+						<p class="more"><a class="button" href="about.html">Read more</a></p>
+				  </div>
+				</section>
+			</div>
+		</div>
+		
+		<div class="row block02"></div>
+		
+		<div class="row block03"></div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrapfooter">
+	<p>Copyright © 2013 - <a href="http://www.zerotheme.com" target="_blank">Web Design </a> by @trismanhady </p>
+	</div>
+</footer>
+
+</body></html>
